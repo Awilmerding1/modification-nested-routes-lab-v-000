@@ -53,7 +53,7 @@ class SongsController < ApplicationController
       end 
     else
       @song = Song.find(params[:id])
-      @artist = Artist.all
+      @artist = @song.artist
     end
   end
 
